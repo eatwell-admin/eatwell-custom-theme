@@ -1040,16 +1040,27 @@ ul {
   font-size: 15px;
 }
 
-/***** Blocks *****/
-/* Used in Homepage#categories and Community#topics */
-.blocks-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  list-style: none;
-  padding: 0;
+/* category icons ***/
+.category-icon{
+  background-repeat: no-repeat;
+  width:60px;
+  height:44px;
+  margin-left: calc(50% - 30px);
+  margin-bottom: 1em;
+
 }
 
+li:nth-child(1) .category-icon{
+  background: url($assets-pretzel-png);
+
+}
+
+li:nth-child(2) .category-icon{
+  background: url($assets-bike-png);
+}
+
+/***** Blocks *****/
+/* Used in Homepage#categories and Community#topics */
 @media (min-width: 768px) {
   .blocks-list {
     margin: 0 -15px;
@@ -1057,9 +1068,8 @@ ul {
 }
 
 .blocks-item {
-  border: 1px solid $brand_color;
-  border-radius: 4px;
   box-sizing: border-box;
+  background-color: #f8f7f4;
   color: $brand_color;
   display: flex;
   flex: 1 0 340px;
@@ -1121,7 +1131,7 @@ ul {
 
 .blocks-item-title {
   margin-bottom: 0;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .blocks-item-description {
