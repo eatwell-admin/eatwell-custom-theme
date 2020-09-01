@@ -1118,6 +1118,7 @@ li:nth-child(1) .category-icon{
 
 li:nth-child(2) .category-icon{
   background: url($assets-bike-png);
+  height:38px;
 }
 
 /***** Blocks *****/
