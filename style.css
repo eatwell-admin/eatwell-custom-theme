@@ -1114,7 +1114,6 @@ ul {
 
 li:nth-child(1) .category-icon{
   background: url($assets-pretzel-png);
-
 }
 
 li:nth-child(2) .category-icon{
@@ -1181,7 +1180,11 @@ li:nth-child(2) .category-icon{
   border-radius: inherit;
 }
 
-.blocks-item-link:hover, .blocks-item-link:active {
+.blocks-item-link:hover .category-icon  {
+filter: grayscale(100%) invert(1);
+}
+
+.blocks-item-link:hover {
   text-decoration: none;
 }
 
