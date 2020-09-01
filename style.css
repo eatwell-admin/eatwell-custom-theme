@@ -1040,6 +1040,24 @@ ul {
   font-size: 15px;
 }
 
+/* category icons ***/
+.category-icon{
+  background-repeat: no-repeat;
+  width:60px;
+  height:44px;
+  margin-left: calc(50% - 30px);
+  margin-bottom: 1em;
+
+}
+
+li:nth-child(1) .category-icon{
+  background: url($assets-pretzel-png);
+}
+
+li:nth-child(2) .category-icon{
+  background: url($assets-bike-png);
+  height:38px;
+}
 /***** Blocks *****/
 /* Used in Homepage#categories and Community#topics */
 .blocks-list {
@@ -1057,8 +1075,7 @@ ul {
 }
 
 .blocks-item {
-  border: 1px solid $brand_color;
-  border-radius: 4px;
+  background-color:#f3f3f3;
   box-sizing: border-box;
   color: $brand_color;
   display: flex;
@@ -1107,6 +1124,9 @@ ul {
   flex: 1;
   justify-content: center;
   border-radius: inherit;
+}
+.blocks-item-link:hover .category-icon  {
+filter: grayscale(100%) invert(1);
 }
 
 .blocks-item-link:hover, .blocks-item-link:active {
